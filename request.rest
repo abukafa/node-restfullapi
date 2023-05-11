@@ -1,0 +1,130 @@
+################################## REGISTRATION
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "name" : "Ultimate User",
+    "email" : "ultimate@semangka.com",
+    "password" : "123456"
+}
+
+################################## LOGIN
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email" : "premium@semangka.com",
+    "password" : "rahasia"
+}
+
+################################## USERS
+GET http://localhost:3000/users
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## USER BY ID
+GET http://localhost:3000/users/645b4da350c1e4e5c6facfef
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## ADD USER
+POST http://localhost:3000/users
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+{
+    "name" : "coba baru",
+    "email" : "baru@semangka.com",
+    "password" : "1213"
+}
+
+################################## EDIT USER
+PUT http://localhost:3000/users/645b4da350c1e4e5c6facfef
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+{
+    "email" : "baru@semangka.com",
+    "password": "rahasia"
+}
+
+################################## DELETE USER
+DELETE  http://localhost:3000/users/645cefff4b22bb85c6f5b0ee
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## PROJECTS
+GET http://localhost:3000/projects
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## PROJECT BY ID
+GET http://localhost:3000/projects/645cd395ce0e206a772df5e3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## ADD PROJECT
+POST http://localhost:3000/projects
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+{
+    "name": "Project Premium 4",
+    "description": "CSS Project",
+    "due_date": "2023-05-11T09:52:59.338Z",
+    "user_id": "salah"
+}
+
+################################## EDIT PROJECT
+PUT http://localhost:3000/projects/645cd387ce0e206a772df5e1
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+{
+    "name" : "Project Updated",
+    "description" : "JS Project",
+    "due_date" : "2023-05-10T06:28:06.505Z"
+}
+
+################################## DELETE PROJECT
+DELETE  http://localhost:3000/projects/645ceb503f346e7363554ed9
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## TASKS
+GET http://localhost:3000/tasks
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## TASK BY ID
+GET http://localhost:3000/tasks/645cd459ce0e206a772df5f4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+
+################################## ADD TASK
+POST http://localhost:3000/tasks
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+{
+    "name": "Task Baru",
+    "description": "Project Interactive",
+    "due_date": "2023-05-10T06:28:06.505Z",
+    "user_id": "salah",
+    "project_id": "645cbab2d84f51a8063128ca"
+}
+
+################################## EDIT TASK
+PUT http://localhost:3000/tasks/645cede4d58787fc75cdf4da
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
+
+{
+    "name" : "Task Updated",
+    "description" : "PHP Project Interactive",
+    "due_date" : "2023-05-10T06:28:06.505Z"
+}
+
+################################## DELETE TASK
+DELETE  http://localhost:3000/tasks/645cede4d58787fc75cdf4da
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0NWI0ZGEzNTBjMWU0ZTVjNmZhY2ZlZiIsImlhdCI6MTY4MzgwODEzN30._s4QNBYAZkWUNDU3d1juSpH9dqc0r3QKoAd8a6kqsTc
