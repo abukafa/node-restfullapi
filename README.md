@@ -22,22 +22,22 @@ Enforced authentication and validation help maintain the security and integrity 
 # Endpoints
 
 - /users/registration : [post] User registration for new user by posting name, email & password
-- /users/login : [post] Login user by posting email & password, also generate token authorization
-- /users : [get] all users registered
-- /users : [post] Add new user by posting name, email & password
-- /users/:id : [get] one user registered by Id
-- /users/:id : [post] Edit active (Loggedin) user data by Id
-- /users/:id : [delete] Delete active (Loggedin) user by Id
-- /project : [get] all projects data
-- /project : [post] Add new project by posting name, description & due-date
-- /project/:id : [get] one project by Id
-- /project/:id : [post] Edit specific project belong to active (Loggedin) user by Id
-- /project/:id : [delete] Delete specific project belong to active (Loggedin) user by Id
-- /task : [get] all tasks
-- /task : [post] Add new task by posting name, description, due-date & project-id
-- /task/:id : [get] one task by Id
-- /task/:id : [post] Edit specific task belong to active (Loggedin) user by Id
-- /task/:id : [delete] Delete specific task belong to active (Loggedin) user by Id
+- /users/login        : [post] Login user by posting email & password, also generate token authorization
+- /users              : [get] all users registered 
+- /users              : [post] Add new user by posting name, email & password
+- /users/:id          : [get] one user registered by Id
+- /users/:id          : [post] Edit active (Loggedin) user data by Id
+- /users/:id          : [delete] Delete active (Loggedin) user by Id
+- /project            : [get] all projects data
+- /project            : [post] Add new project by posting name, description & due-date
+- /project/:id        : [get] one project by Id
+- /project/:id        : [post] Edit specific project belong to active (Loggedin) user by Id
+- /project/:id        : [delete] Delete specific project belong to active (Loggedin) user by Id
+- /task               : [get] all tasks 
+- /task               : [post] Add new task by posting name, description, due-date & project-id
+- /task/:id           : [get] one task by Id
+- /task/:id           : [post] Edit specific task belong to active (Loggedin) user by Id
+- /task/:id           : [delete] Delete specific task belong to active (Loggedin) user by Id
 
 # Authentication
 
