@@ -21,7 +21,7 @@ Enforced authentication and validation help maintain the security and integrity 
 
 # Endpoints
 
-- /users/registration : [post] User registration for new user by posting name, email & password
+- /users/register     : [post] User registration for new user by posting name, email & password
 - /users/login        : [post] Login user by posting email & password, also generate token authorization
 - /users              : [get] all users registered 
 - /users              : [post] Add new user by posting name, email & password
