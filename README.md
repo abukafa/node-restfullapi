@@ -2,8 +2,6 @@
 
 # Description
 
-This is the Application of REST API for fulfillment the candidate test
-for Full-Stack Developer, Software Engineer at Interactiv.
 This API project written in Node.js with dependencies :
 
 - bcrypt ^5.1.0
